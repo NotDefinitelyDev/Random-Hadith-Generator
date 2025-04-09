@@ -19,7 +19,7 @@ async function geneQo() {
 }
 
 function autoGene() {
-    interHand = setInterval(geneQo,3000)
+    interHand = setInterval(geneQo,5000)
     autoSt.style.visibility = "visible"
     autoSt.innerHTML ="اوتوماتيكي"
 }
