@@ -1,0 +1,94 @@
+body {
+  font-family: "Cairo", sans-serif;
+  background-color: #eee;
+  margin: 0;
+  background-image: url(pexels-jodaarba-3254036.jpg);
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 20px;
+  padding: 20px;
+  color: white;
+  font-size: 60px;
+}
+
+.big {
+  vertical-align: middle;
+  font-size: 75px;
+}
+
+.quotes {
+  max-width: 500px;
+  text-align: center;
+  padding: 50px;
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.quote-display {
+  padding: 30px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  position: relative;
+  color: white;
+  min-height: 100px;
+  width: 400px;
+}
+
+.quote-display::before {
+  content: "❝";
+  bottom: 0px;
+  left: 0px;
+}
+
+.quote-display::after {
+  content: "❞";
+  right: 0;
+  top: 0;
+}
+
+.quote-display::after,
+.quote-display::before {
+  font-size: 50px;
+  position: absolute;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #607d8b96;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+.buttons button:hover {
+  background-color: rgba(158, 37, 37, 0.664);
+}
+
+.auto-status {
+  background-color: rgb(75, 18, 18);
+  width: 100px;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  margin: 40px auto auto auto;
+  transition: 0.3s;
+}
