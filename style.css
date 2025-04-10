@@ -42,7 +42,7 @@ h1 {
   position: relative;
   color: white;
   min-height: 100px;
-  width: 400px;
+  max-width: 100%;
 }
 
 .quote-display::before {
