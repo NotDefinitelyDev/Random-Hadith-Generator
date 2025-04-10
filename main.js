@@ -30,5 +30,5 @@ function stopAuto() {
 }
 
 geneBtn.onclick = geneQo;
-stopBtn.onclick = stopAuto;
 autoBtn.onclick = autoGene;
+stopBtn.onclick = stopAuto;

@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Cairo", sans-serif;
   background-color: #eee;
@@ -30,7 +34,7 @@ h1 {
 }
 
 .quote-display {
-  padding: 30px;
+  padding: 40px;
   font-size: 25px;
   margin-bottom: 20px;
   line-height: 1.8;
@@ -63,11 +67,10 @@ h1 {
   display: flex;
   gap: 20px;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .buttons button {
-  padding: 10px 20px;
+  padding: 10px;
   border: none;
   border-radius: 5px;
   background-color: #607d8b96;
@@ -83,12 +86,47 @@ h1 {
 }
 
 .auto-status {
-  background-color: rgb(75, 18, 18);
-  width: 100px;
+  background-color: rgb(75 18 18 / 74%);
+  width: fit-content;
   color: white;
   padding: 10px;
   font-size: 20px;
   border-radius: 10px;
   margin: 40px auto auto auto;
   transition: 0.3s;
+}
+
+@media (max-width:768px) {
+  .main-heading {
+    width:420px;
+    margin: 0 auto;
+  }
+  .main-heading h1 {
+    font-size: 50px;
+  }
+
+  .main-heading .big {
+    font-size: 60px;
+  }
+  .quotes {
+    max-width: 100%;
+    padding: 0;
+    top: 53%;
+    left: 51%;
+  }
+  .auto-status {
+    width: fit-content;
+ }
+ .buttons button {
+  font-size: 25px;
+ }
+ .quote-display {
+  padding: 30px;
+ }
+}
+
+@media (min-width:769px) {
+  .main-heading {
+    width: 100%;
+  }
 }
