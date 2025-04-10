@@ -97,18 +97,27 @@ h1 {
   transition: 0.3s;
 }
 
+.head {
+  max-width: 100%;
+}
 
 @media (max-width:768px) {
+
   .quotes {
     padding: 0;
     margin-top: 200px;
   }
 
-  .main-heading h1 {
-    font-size: 43px;
+  .head h1 {
+    font-size: 40px;
   }
 
-  .main-heading .big {
+  .head  {
+    font-size: 40px;
+    margin: 0 auto;
+  }
+
+  .head .big {
     font-size: 60px;
   }
 
@@ -116,5 +125,18 @@ h1 {
     display: flex;
     gap: 15px;
     justify-content: center;
+}
+}
+
+@media (max-width:360px) {
+  .head h1 {
+    font-size: 38px;
+}
+.head .big {
+  font-size: 55px;
+}
+.buttons button {
+  padding: 10px;
+  font-size: 25px;
 }
 }
