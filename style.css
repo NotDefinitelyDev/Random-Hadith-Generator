@@ -7,8 +7,7 @@ body {
   background-color: #eee;
   margin: 0;
   background-image: url(pexels-jodaarba-3254036.jpg);
-  background-size: cover;
-  padding: 0;
+  background-size: cover;position: relative;
 }
 
 h1 {
@@ -28,14 +27,15 @@ h1 {
   max-width: 500px;
   text-align: center;
   padding: 50px;
-  position: absolute;
+  position: relative;
+  top:50%;
   left: 50%;
-  top: 60%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
+  margin-top: 80px;
 }
 
 .quote-display {
-  padding: 40px;
+  padding: 30px;
   font-size: 25px;
   margin-bottom: 20px;
   line-height: 1.8;
@@ -48,7 +48,7 @@ h1 {
 .quote-display::before {
   content: "❝";
   bottom: 0px;
-  left: 0px;
+  left: 6px;
 }
 
 .quote-display::after {
@@ -97,39 +97,18 @@ h1 {
   transition: 0.3s;
 }
 
+
 @media (max-width:768px) {
-  .main-heading {
-    width: 420px;
-    margin: 0 auto;
+  .quotes {
+    padding: 0;
+    margin-top: 150px;
   }
+
   .main-heading h1 {
-    font-size: 50px;
-    margin-top: 20px;
+    font-size: 44px;
   }
 
   .main-heading .big {
-    font-size: 60px;
-  }
-  .quotes {
-    max-width: 100%;
-    padding: 0;
-    top: 53%;
-    left: 51%;
-  }
-  .auto-status {
-    width: fit-content;
- }
- .buttons button {
-  font-size: 25px;
-  padding: 5px;
- }
- .quote-display {
-  padding: 30px;
- }
-}
-
-@media (min-width:769px) {
-  .main-heading {
-    width: 100%;
+    font-size: 65px;
   }
 }
