@@ -101,14 +101,20 @@ h1 {
 @media (max-width:768px) {
   .quotes {
     padding: 0;
-    margin-top: 150px;
+    margin-top: 200px;
   }
 
   .main-heading h1 {
-    font-size: 44px;
+    font-size: 43px;
   }
 
   .main-heading .big {
-    font-size: 65px;
+    font-size: 60px;
   }
+
+  .buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
 }
